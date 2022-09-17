@@ -12,8 +12,8 @@ public class EventMapper {
         restEvent.setEventType(event.getEventType());
         restEvent.setDescription(event.getDescription());
         restEvent.setResponsible(event.getResponsible());
-        restEvent.setStart(event.getStart());
-        restEvent.setEnd(event.getEnd());
+        restEvent.setStartEvent(event.getStartEvent());
+        restEvent.setEndEvent(event.getEndEvent());
         restEvent.setStatus(event.getStatus());
         restEvent.setPlace(event.getPlace());
         return restEvent;
@@ -25,8 +25,8 @@ public class EventMapper {
                 .eventType(event.getEventType())
                 .description(event.getDescription())
                 .responsible(event.getResponsible())
-                .start(event.getStart())
-                .end(event.getEnd())
+                .startEvent(event.getStartEvent())
+                .endEvent(event.getEndEvent())
                 .place(event.getPlace())
                 .status(event.getStatus())
                 .build();

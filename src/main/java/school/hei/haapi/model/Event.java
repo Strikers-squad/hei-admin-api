@@ -41,16 +41,18 @@ public class Event implements Serializable {
     private String description;
 
     @ManyToOne
+    @JoinColumn(name = "responsible_id")
     private User responsible;
 
-    private Instant start;
-    private Instant end;
+    private Instant startEvent;
+    private Instant endEvent;
 
     @Type(type = "pgsql_enum")
     @Enumerated(EnumType.STRING)
     private school.hei.haapi.endpoint.rest.model.Event.StatusEnum status;
 
     @ManyToOne
+    @JoinColumn(name = "place_id")
     private Place place;
 
     @Override

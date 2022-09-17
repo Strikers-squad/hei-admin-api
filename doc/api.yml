@@ -1236,10 +1236,10 @@ components:
           example: string
         responsible:
           $ref: '#/components/schemas/User'
-        start:
+        start_event:
           type: string
           format: date-time
-        end:
+        end_event:
           type: string
           format: date-time
         status:

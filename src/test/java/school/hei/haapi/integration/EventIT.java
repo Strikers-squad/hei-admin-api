@@ -85,8 +85,8 @@ public class EventIT {
         event.setEventType(Event.EventTypeEnum.COURSES);
         event.setDescription("Some description");
         event.setResponsible(teacher1());
-        event.setStart(Instant.parse("2022-09-08T08:00:00.00Z"));
-        event.setEnd(Instant.parse("2022-09-08T10:30:00.00Z"));
+        event.setStartEvent(Instant.parse("2022-09-08T08:00:00Z"));
+        event.setEndEvent(Instant.parse("2022-09-08T10:30:00Z"));
         event.setStatus(Event.StatusEnum.ACTIVE);
         event.setPlace(place1());
         return event;
@@ -98,8 +98,8 @@ public class EventIT {
         event.setEventType(Event.EventTypeEnum.COURSES);
         event.setDescription("Some description");
         event.setResponsible(manager1());
-        event.setStart(Instant.parse("2022-09-08T08:00:00.00Z"));
-        event.setEnd(Instant.parse("2022-09-08T10:30:00.00Z"));
+        event.setStartEvent(Instant.parse("2022-10-08T08:27:24.00Z"));
+        event.setEndEvent(Instant.parse("2022-10-08T09:27:24.00Z"));
         event.setStatus( Event.StatusEnum.CANCEL);
         event.setPlace(place1());
         return event;
